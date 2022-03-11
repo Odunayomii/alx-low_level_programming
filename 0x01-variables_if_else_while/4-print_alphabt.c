@@ -1,4 +1,4 @@
-nclude <stdio.h>
+[10:51 PM, 3/11/2022] Abiodun: #include <stdio.h>
 
 /**
  * main - program that prints the alphabet in lowercase, followed by a new line
@@ -8,19 +8,19 @@ nclude <stdio.h>
 
 int main(void)
 {
-	int lw = 'a';
-	while (lw <= 'z')
-	{
-		if (lw == 'e' || lw == 'q')
-		{
-			lw += 1;
-		}
-		else
-		{
-			putchar(lw);
-			lw += 1;
-		}
-	}
-	putchar('\n');
-	return (0);
+int lw = 'a';
+while (lw <= 'z')
+{
+if (lw == 'e' || lw == 'q')
+{
+lw += 1;
+}
+else
+{
+putchar(lw);
+lw += 1;
+}
+}
+putchar('\n');
+return (0);
 }
