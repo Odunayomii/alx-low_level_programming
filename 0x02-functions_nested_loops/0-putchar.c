@@ -1,17 +1,17 @@
 #include "main.h"
 /**
- * main - Print "_putchar" followed by a new line.
+ * main - Print "Holberton" followed by a new line.
  * Description: You are not allowed to include standard libraries.
  * Return: 0
  */
 int main(void)
 {
-	char putchar[] = "_putchar";
+	char holberton[] = "Holberton";
 	int i = 0;
 
-	while (putchar[i] != '\0')
+	while (holberton[i] != '\0')
 	{
-		_putchar(putchar[i]);
+		_putchar(holberton[i]);
 		i++;
 	}
 	_putchar('\n');
