@@ -43,4 +43,9 @@ int _sqrt(int x, int i)
 int hai(int n, int d)
 {
 	if (n % d == 0)
-
+		return (0);
+	else if (_sqrt(n, 1) < d)
+		return (1);
+	else
+		return (hai(n, d + 1));
+}
