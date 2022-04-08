@@ -88,4 +88,3 @@ int *multiply(char *num1, int len_1, char *num2, int len_2, int len_r)
 		i2 = len_2 - 1, digit = (len_r - 1 - i);
 		if (!is_digit(num1[i1]))
 			return (NULL);
-
