@@ -58,4 +58,31 @@ void print_all(const char * const format, ...)
 	t_print t[] = {
 		{"c", p_char},
 		{"s", p_string},
+		{"i", p_integer},
+		{"f", p_float},
+		{NULL, NULL}
+	};
+	va_list valist;
+	char *s = "";
 
+	va_start(valist, format);
+	i = 0;
+	while (format && format[i])
+	{
+		j = 0;
+		while (t[j].x != NULL)
+		{
+			if (*(t[j].x) == format[i])
+			{
+				printf("%s", s);
+				t[j].T_func(valist);
+				s = ", ";
+				break;
+			}
+			j++;
+		}
+		i++;
+	}
+	va_end(valist);
+	printf("\n");
+}
