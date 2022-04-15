@@ -1,1 +1,1 @@
-C - Function pointers
+Project is on C - Function pointers
