@@ -1,1 +1,1 @@
- Project on C - Variadic functions
+Project is on C - Variadic functions
