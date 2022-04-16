@@ -34,4 +34,7 @@ void print_int(va_list arg)
 	printf("%d", num);
 }
 
+/**
+ * print_float - Prints a float.
+ * @arg: A list of arguments pointing to
 
