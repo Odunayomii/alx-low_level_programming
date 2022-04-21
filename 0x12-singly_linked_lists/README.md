@@ -1,1 +1,1 @@
-Project is on C - Singly linked lists
+Project on C - Singly linked lists
