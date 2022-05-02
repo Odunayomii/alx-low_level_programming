@@ -45,4 +45,34 @@ int main(int argc, char **argv)
 
 	b_writed = close(fd_to);
 	if (b_writed < 0)
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd_to), exit(100);
 
+	return (0);
+}
+
+/**
+ * print_error_1 - Print the error and close the file descriptor
+ * @msg: Error message to show
+ * @opt: Optional arguments
+ * @status: Exit status code
+ * @fd1: File descriptor
+ **/
+void print_error_1(char *msg, char *opt, int status, int fd1)
+{
+	if (fd1 > 0)
+		close(fd1);
+
+	print_error(msg, opt, status);
+}
+
+/**
+ * print_error - Print the error and close the file descriptor
+ * @msg: Error message to show
+ * @opt: Optional arguments
+ * @status: Exit status code
+ **/
+void print_error(char *msg, char *opt, int status)
+{
+	dprintf(STDERR_FILENO, "%s%s\n", msg, opt);
+	exit(status);
+}
