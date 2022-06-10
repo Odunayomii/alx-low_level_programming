@@ -1,6 +1,6 @@
 /*
  * File: 0-print_dlistint.c
- * Auth: Balogun Murtadho
+ * Auth: salami odunayo
  */
 
 #include "lists.h"
