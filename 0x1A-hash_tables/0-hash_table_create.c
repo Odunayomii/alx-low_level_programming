@@ -1,6 +1,6 @@
 /*
  * File: 0-hash_table_create.c
- * Auth: Balogun Murtadho
+ * Auth: salami odunayo
  */
 
 #include "hash_tables.h"
